@@ -8,7 +8,6 @@ import Navbar from '../../components/common/navbarPage.js';
 import {Link} from 'react-router-dom';
 import arrow from '../../images/TopProvince/12_arrow-right.png';
 import styled from 'styled-components';
-const REACT_APP_API_KEY = 'AIzaSyDDViAvlzx_1iSnaUKtNNLr-OuJpSeypjI';
 
 const StyledButton = styled(Link)`
     width: 60px;

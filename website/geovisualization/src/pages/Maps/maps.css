@@ -1,0 +1,113 @@
+.noscroll {
+  overflow-y: hidden;
+}
+
+.sidenav {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3C3963;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 64px; */
+}
+
+.sidenav a {
+  padding: 0 0;
+  text-decoration: none;
+  display: block;
+  z-index: 10;
+}
+
+.sidenav a:hover {
+  background-color:  #47447a;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidePlaceName {
+  color: #FBC02D;
+  font-weight: 600;
+  font-size: 40px;
+  /* font-size: 55px ; */
+  font-family: 'Kanit';
+  text-align: center;
+  padding-top: 30px;
+}
+
+.sideProvinceInTopPlace {
+  color: #fcd166;
+  font-weight: 500;
+  font-size: 30px;
+  /* font-size: 55px ; */
+  font-family: 'Kanit';
+  text-align: center;
+  /* padding-top: 5px; */
+}
+
+.sideClickedPlace {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: 'Kanit';
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.sideLinkBox {
+  max-width: 300px;
+  min-height: 80px;
+  border: solid 1px;
+  border-color: rgba(112,112,112, 0.35);
+  padding: 8px 16px;
+  margin-bottom:-1px;
+}
+
+.sideLinkTitle {
+  font-size: 15px;
+  font-weight: 600;
+  /* font-family: 'Kanit'; */
+  line-height: 26px;
+  color: #FFC300;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.sideLinkDesc {
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(168, 168, 168);
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 10px;
+}
+
+.infoText {
+  font-family: 'Kanit';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.center {
+  display: block;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}

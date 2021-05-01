@@ -1,0 +1,58 @@
+/* .top a {
+    color: white;
+    text-decoration: none;
+} */
+
+.top .LayOut {
+    margin-left: 164px;
+    margin-right: 164px;
+}
+
+.top .BGimg {
+    width: 100vw;
+    /* height: 324px; */
+    height: 220px;
+    margin-top: -64px;
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+        ),
+        url('../../images/TopProvince/00_backdrop.png');
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+
+.top .PageTitle {
+    font-size: 42px;
+    font-weight: 900;
+    color: white;
+    /* margin-top: -175px; */
+    margin-top: -140px;
+}
+
+.top .PageBreadCrumbs {
+    font-size: 14px;
+    font-weight: 550;
+    color: white;
+    margin-top: 20px;
+}
+
+.top .Title {
+    font-size: 42px;
+    font-weight: 800;
+    /* margin-top: 150px; */
+    margin-bottom: 50px;
+    margin-top: 110px;
+    /* margin-bottom: 25px; */
+}
+
+.top .ScrollArea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.home a {
+    color: white;
+    text-decoration: none;
+}
+
+.home .BGimg {
+    width: 100%;
+    height: 600px;
+    margin-top: -64px;
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+        ),
+        url('../../images/LandingPage/01-backdrop.jpg');
+    background-size: 100% 100%;
+}
+
+.home .TopPicksContainer {
+    display: flex;
+}
+
+.home .SearchSectionContainer {
+    width: 1088px;
+    height: 148px;
+    margin: -74px auto 0 auto;
+    background-color: white;
+    box-shadow: 0px 15px 30px -6px rgba(0,0,0,0.1);
+}
+
+.home .SearchContainer {
+    width: 896px;
+    height: 75px;
+    margin-top: -111px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .SearchText {
+    color: #5863F8;
+    font-weight: 500;
+}
+
+.home .FlexContainer {
+    display: flex;
+}

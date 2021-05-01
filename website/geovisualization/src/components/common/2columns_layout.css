@@ -1,0 +1,8 @@
+.layout .row {
+  width: 80vw;
+  display: flex;
+}
+  
+.layout .column {
+    flex: 50%;
+}

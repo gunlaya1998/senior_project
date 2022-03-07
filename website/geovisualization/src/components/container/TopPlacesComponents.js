@@ -4,10 +4,12 @@ import axios from "axios";
 import '../../components/common/2columns_layout.css';
 import '../../components/common/2columns_layout.css';
 import '../../components/common/PlaceBox.css';
+// import '../../pages/TopProvince/TopProvince.css';
 import Navbar from '../common/navbarPage.js';
 import {Link} from 'react-router-dom';
 import arrow from '../../images/TopProvince/12_arrow-right.png';
 import styled from 'styled-components';
+const REACT_APP_API_KEY = 'AIzaSyDDViAvlzx_1iSnaUKtNNLr-OuJpSeypjI';
 
 const StyledButton = styled(Link)`
     width: 60px;
@@ -34,26 +36,26 @@ export default class TopPlaces extends Component {
 
     componentDidMount() {
         axios.all([
-            axios.get(`api url 1`),
-            axios.get(`api url 2`),
-            axios.get(`api url 3`),
-            axios.get(`api url 4`),
-            axios.get(`api url 5`),
-            axios.get(`api url 6`),
-            axios.get(`api url 7`),
-            axios.get(`api url 8`),
-            axios.get(`api url 9`),
-            axios.get(`api url 10`),
-            axios.get(`api url 11`),
-            axios.get(`api url 12`),
-            axios.get(`api url 13`),
-            axios.get(`api url 14`),
-            axios.get(`api url 15`),
-            axios.get(`api url 16`),
-            axios.get(`api url 17`),
-            axios.get(`api url 18`),
-            axios.get(`api url 19`),
-            axios.get(`api url 20`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=1`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=2`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=3`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=4`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=5`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=6`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=7`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=8`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=9`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=10`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=11`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=12`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=13`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=14`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=15`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=16`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=17`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=18`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=19`),
+            axios.get(`http://mars.mikelab.net:30011/getRankPlaces?placeRank=20`),
         ])    
         .then( res => {
             this.setState({rank1: res[0].data[0]});

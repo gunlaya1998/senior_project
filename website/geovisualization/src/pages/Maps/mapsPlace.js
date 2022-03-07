@@ -32,7 +32,7 @@ class MapContainer extends Component {
     };
     
     componentDidMount() {
-        axios.get(`api url`, {
+        axios.get(process.env.API_RANK_PLACES, {
             params: {
                 placeRank: this.props.match.params.rank
             }
@@ -48,7 +48,7 @@ class MapContainer extends Component {
             this.setState({ mapLat: lat });
             this.setState({ mapLon: lon });
 
-            return axios.get(`api url`, {
+            return axios.get(process.env.API_THREAD_DATA, {
                 params: {
                     provinceTh: this.state.targetProvince
                 }
@@ -142,5 +142,5 @@ class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: ('edit google api key here')
+    apiKey: (process.env.GOOGLE_API_KEY)
 })(MapContainer)

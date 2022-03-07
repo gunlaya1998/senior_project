@@ -25,6 +25,7 @@ ReactDOM.render(
                 <Route path="/topProvince/:rank" component={MapsProvince} />
                 <Route path="/topPlace/:rank" component={MapsPlace} />
                 <Route path="/searchMap/:searchTerm" component={searchMap} />
+
             </Switch>
         </Router>
     </React.StrictMode>,

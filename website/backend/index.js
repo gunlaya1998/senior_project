@@ -1,17 +1,17 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const PORT = 30011;
 const mongoose = require("mongoose");
 const router = express.Router();
+const PORT = process.env.PORT;
+const DATABASE = process.env.DATABASE_AUTH;
 
 let Thread_Data = require("./models/Thread_Data");
 let Ranking_Province = require("./models/Ranking_Province");
 let Ranking_Places = require("./models/Ranking_Places");
 
 app.use(cors());
-// edit "MongoServer Config" to available server
-mongoose.connect( "MongoServer Config", {
+mongoose.connect(DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

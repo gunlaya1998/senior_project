@@ -1,0 +1,48 @@
+ex_train_dataset_copy
+0.5365087594646915
+              precision    recall  f1-score   support
+
+     B-HOTEL      1.000     0.107     0.194        28
+     I-HOTEL      1.000     0.170     0.291        88
+  B-LOCATION      0.849     0.490     0.622       667
+  I-LOCATION      0.772     0.430     0.552      1200
+B-RESTAURANT      0.750     0.136     0.231        22
+I-RESTAURANT      0.913     0.152     0.261       138
+
+   micro avg      0.806     0.413     0.546      2143
+   macro avg      0.881     0.248     0.358      2143
+weighted avg      0.818     0.413     0.537      2143
+---------------------- COMPLETE ----------------------
+
+ex_train_dataset_copy
+0.4869738359924393
+              precision    recall  f1-score   support
+
+     B-HOTEL      0.750     0.167     0.273        18
+     I-HOTEL      0.680     0.212     0.324        80
+  B-LOCATION      0.720     0.469     0.568       192
+  I-LOCATION      0.739     0.467     0.573       261
+B-RESTAURANT      0.333     0.067     0.111        15
+I-RESTAURANT      0.400     0.089     0.145        45
+
+   micro avg      0.714     0.388     0.503       611
+   macro avg      0.604     0.245     0.332       611
+weighted avg      0.691     0.388     0.487       611
+---------------------- COMPLETE ----------------------
+
+ex_train_dataset_copy
+0.526968584191381
+              precision    recall  f1-score   support
+
+     B-HOTEL      0.375     0.188     0.250        16
+     I-HOTEL      0.385     0.137     0.202        73
+  B-LOCATION      0.682     0.548     0.608       321
+  I-LOCATION      0.681     0.474     0.559       635
+B-RESTAURANT      0.500     0.105     0.174        19
+I-RESTAURANT      0.800     0.288     0.424       111
+
+   micro avg      0.674     0.446     0.537      1175
+   macro avg      0.570     0.290     0.369      1175
+weighted avg      0.667     0.446     0.527      1175
+---------------------- COMPLETE ----------------------
+

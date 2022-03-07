@@ -1,0 +1,15 @@
+0.4947773317313081
+              precision    recall  f1-score   support
+
+     B-HOTEL      0.800     0.138     0.235        29
+     I-HOTEL      0.684     0.118     0.202       110
+  B-LOCATION      0.731     0.476     0.577       359
+  I-LOCATION      0.604     0.491     0.541       658
+B-RESTAURANT      0.667     0.133     0.222        15
+I-RESTAURANT      0.800     0.220     0.345       109
+
+   micro avg      0.650     0.420     0.510      1280
+   macro avg      0.714     0.263     0.354      1280
+weighted avg      0.668     0.420     0.495      1280
+
+

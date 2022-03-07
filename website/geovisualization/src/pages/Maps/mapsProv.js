@@ -5,6 +5,8 @@ import axios from "axios";
 import NavbarMaps from '../../components/common/navbarMaps';
 import './maps.css'
 
+// const REACT_APP_API_KEY = 'AIzaSyDDViAvlzx_1iSnaUKtNNLr-OuJpSeypjI';
+
 const mapStyles = {
     top: '0',
     buttom: '0',
@@ -32,7 +34,7 @@ class MapContainer extends Component {
     };
 
     componentDidMount() {
-        axios.get(`api url`, {
+        axios.get(process.env.API_RANK_PROVINCE, {
             params: {
                 provinceRank: this.props.match.params.rank
             }
@@ -47,7 +49,7 @@ class MapContainer extends Component {
             this.setState({ mapLat: lat });
             this.setState({ mapLon: lon });
 
-            return axios.get(`api url`, {
+            return axios.get(`API_THREAD_DATA`, {
                 params: {
                     provinceTh: this.state.targetProvince
                 }
@@ -141,5 +143,5 @@ class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: ('edit google api key here')
+    apiKey: (process.env.GOOGLE_API_KEY)
 })(MapContainer)

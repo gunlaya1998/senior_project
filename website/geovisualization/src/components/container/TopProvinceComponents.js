@@ -8,6 +8,7 @@ import Navbar from '../../components/common/navbarPage.js';
 import {Link} from 'react-router-dom';
 import arrow from '../../images/TopProvince/12_arrow-right.png';
 import styled from 'styled-components';
+const REACT_APP_API_KEY = 'AIzaSyDDViAvlzx_1iSnaUKtNNLr-OuJpSeypjI';
 
 const StyledButton = styled(Link)`
     width: 60px;
@@ -31,43 +32,43 @@ export default class TopProvince extends Component {
   }
 
   componentDidMount() {
-    axios.get(`api url 1`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=1`)
     .then(res => {
       this.setState({ rank1 : res.data[0] });
     })
-    axios.get(`api url 2`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=2`)
     .then(res => {
     this.setState({ rank2 : res.data[0] });
     })
-    axios.get(`api url 3`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=3`)
     .then(res => {
       this.setState({ rank3 : res.data[0] });
     })
-    axios.get(`api url 4`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=4`)
     .then(res => {
       this.setState({ rank4 : res.data[0] });
     })
-    axios.get(`api url 5`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=5`)
     .then(res => {
       this.setState({ rank5 : res.data[0] });
     })
-    axios.get(`api url 6`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=6`)
     .then(res => {
       this.setState({ rank6 : res.data[0] });
     })
-    axios.get(`api url 7`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=7`)
     .then(res => {
       this.setState({ rank7 : res.data[0] });
     })
-    axios.get(`api url 8`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=8`)
     .then(res => {
       this.setState({ rank8 : res.data[0] });
     })
-    axios.get(`api url 9`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=9`)
     .then(res => {
       this.setState({ rank9 : res.data[0] });
     })
-    axios.get(`api url 10`)
+    axios.get(`http://mars.mikelab.net:30011/getRankProvince?provinceRank=10`)
     .then(res => {
       this.setState({ rank10 : res.data[0] });
     })
